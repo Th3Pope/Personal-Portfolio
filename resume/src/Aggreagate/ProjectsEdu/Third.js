@@ -15,6 +15,7 @@ function Third() {
                     <Typing.Delay ms={2000}/>
                     <Typing.Backspace count={5}/>
                 </Typing>
+                <h5 className={css.H5Txt}>(Too long; didn't watch)</h5>
                 <div className={css.Box}>
                     <h2 className={css.H2}>I am well educated:</h2>
                     <ul className={css.EduTbl}>

@@ -6,8 +6,8 @@ import ReactTooltip from 'react-tooltip';
 
 function Projects() {
 
-    function gitCalc() {
-        window.open('https://github.com/Th3Pope/Calculator--Infix', '_blank', 'noopener,noreferrer');
+    function gitPeerConnect() {
+        window.open('https://github.com/Th3Pope/PeerConnect', '_blank', 'noopener,noreferrer');
     }
 
     function gitExpire() {
@@ -17,13 +17,16 @@ function Projects() {
     function gitCaculator() {
         window.open('https://github.com/Th3Pope/Calculator--Infix', '_blank', 'noopener,noreferrer');
     }
+    function gitResume() {
+        window.open('https://github.com/Th3Pope/Personal-Portfolio', '_blank', 'noopener,noreferrer');
+    }
 
     return (
         <div className={css.Container}>
             <div className={css.Box}>
                 <h1 className={css.H1}>Check out my projects:</h1>
                 <ul className={css.List2}>
-                    <li className={css.ImageContainer}>
+                    <li className={css.ImageContainer} onClick={gitPeerConnect}>
                         <img className={css.Image1} src={PeerConnect} alt={"PeerConnectLogo"}></img>
                         <div className={css.Overlay}>
                             <div className={css.PconnectText}>
@@ -49,18 +52,18 @@ function Projects() {
 
                             <li className={css.Border}>
                                 <h5 className={css.Website}>
-                                    <a data-tip data-for={'Web'}>This pretty page!</a>
+                                    <a data-tip data-for={'Web'} onClick={gitResume}>This pretty page!</a>
                                 </h5>
                             </li>
                             <ReactTooltip id="Web" textColor={'#0788de'} backgroundColor={'#2a2d34'}>
-                                <span style={{fontSize: '14px'}}>I'll show you what else I can make too, well if you pay me!</span>
+                                <span style={{fontSize: '14px'}}>I'll show you what else I can make too, well if you pay me! Click to view source code</span>
                             </ReactTooltip>
                         </div>
                     </li>
-                    <li className={css.ImageContainer2}>
+                    <li className={css.ImageContainer2} onClick={gitCaculator}>
 
-                        <img className={css.Image2} onClick={gitCaculator} src={Cacula} alt={"Caculator"}
-                             onClick={gitCalc}></img>
+                        <img className={css.Image2}  src={Cacula} alt={"Caculator"}
+                             ></img>
                         <div className={css.Overlay2}>
                             <div className={css.CalcText} style={{fontSize: '20px'}}><b>Infix Scientific Calculator</b>
                             </div>

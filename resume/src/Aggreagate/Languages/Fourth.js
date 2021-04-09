@@ -78,6 +78,8 @@ function Forth() {
                     />
                 </div>
             </div>
+            <p className={css.Text}>The above showcases my current skills, but I am always eager to learn and expand my knowledge.</p>
+
         </div>
     )}
     export default Forth;

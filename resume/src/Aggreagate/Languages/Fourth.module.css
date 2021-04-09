@@ -13,8 +13,8 @@
     text-align: center;
     color: #010103;
 
-
 }
+
 .H1{
     font-family: Game;
     letter-spacing: 5px;
@@ -33,6 +33,12 @@
 
 .CenterChart {
     margin: 2rem;
+}
+.Text{
+    width: 60vw;
+    padding-top: 20px;
+    font-size: 1.25em;
+    font-family: Game;
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 800px) {

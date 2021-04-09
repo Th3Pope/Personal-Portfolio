@@ -32,12 +32,9 @@ function ContactMe() {
     }
     return (
         <div className={css.Container}>
-            <Typing speed={100} loop={true}>
 
-                <div className={css.H1}>Lets Connect!</div>
-                <Typing.Delay ms={1000}/>
-                <Typing.Backspace count={14}/>
-            </Typing>
+       <div className={css.H1}>Lets Connect!</div>
+
             <div className={css.Center}>
 
                 <form className={css.Grid} onSubmit={handleSubmit(onSubmit)}>
