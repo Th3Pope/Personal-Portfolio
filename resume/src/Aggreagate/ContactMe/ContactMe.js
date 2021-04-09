@@ -2,8 +2,6 @@ import React from 'react';
 import css from './ContactMe.module.css';
 import {useForm} from 'react-hook-form';
 import emailjs from 'emailjs-com';
-import Typing from 'react-typing-animation';
-
 
 
 function ContactMe() {

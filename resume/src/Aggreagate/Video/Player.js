@@ -21,7 +21,7 @@ class Player extends Component {
     render() {
         return (
             <div>
-                <img className={css.StartButton} onClick={this.handleOpen} src={Image} style={{width: '100%'}}/>
+                <img className={css.StartButton} onClick={this.handleOpen} src={Image} style={{width: '100%'}} alt={""}/>
 
                 <ModalVideo channel='youtube' isOpen={this.state.show} videoId='OHT0GYGW3Rs'
                             onClose={() => this.setState({show: false})}/>

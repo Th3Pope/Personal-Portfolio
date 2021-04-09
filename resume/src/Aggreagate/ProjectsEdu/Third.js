@@ -21,7 +21,7 @@ function Third() {
                     <ul className={css.EduTbl}>
                         <li className={css.LiElements}>
                             <div className={css.LogoContainer}>
-                                <img src={CwuLogo} className={css.Logo}/>
+                                <img src={CwuLogo} className={css.Logo} alt={""}/>
                                 <div className={css.Overlay}>
                                     <div style={{width: '80%'}}>
                                     <h3><b>Bachelors of Science</b></h3>
@@ -44,7 +44,7 @@ function Third() {
                         </li>
                         <li className={css.LiElements}>
                             <div className={css.LogoContainer}>
-                                <img src={YvcLogo} className={css.Logo}/>
+                                <img src={YvcLogo} className={css.Logo} alt={""}/>
                                 <div className={css.Overlay}>
                                     <div style={{width: '80%'}}>
                                     <h3 className={css.AA}><b>Associates of Arts</b></h3>
