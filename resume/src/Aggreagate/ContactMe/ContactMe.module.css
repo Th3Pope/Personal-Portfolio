@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Game;
+    src:url('../../Assets/Fonts/gameovercre1.ttf');
+}
+.Container {
+    height: 110vh;
+    font-family: Game;
+    background-color: #02645c;
+    overflow: visible;
+}
+.H1 {
+    font-size: 6em;
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    letter-spacing: 5px;
+    color: #010103;
+}
+.Grid{
+    display: grid;
+    width: 40vw;
+    margin-bottom: 5vh;
+    font-size: 1.5em;
+}
+.Pad {
+    padding-top: 4vh;
+    font-size: 1.5em;
+    color: #010103;
+
+}
+.PadBtm {
+    margin-bottom: 5vh;
+    background-color: #fad784;
+    border-radius: 10px;
+}
+.TextInput{
+    background-color: #fad784;
+    border-radius: 10px;
+}
+.Button{
+    height: 7vh;
+    font-size: 5vh;
+    background-color: #0788de;
+    border-radius: 10px;
+}
+ .Error{
+    color: #F20303;
+}
+ .Name{
+font-size: 1.5em;
+     color: #010103;
+ }
+ .TextInput:focus{
+     background-color: #0788de;
+ }
+ .PadBtm:focus{
+     background-color: #0788de;
+ }
+@media screen and (max-width: 444px){
+.Center {
+    position: absolute;
+    left:15%;
+}
+}
+@media screen and (min-width:445px)and (max-width: 599px){
+    .Center {
+        position: absolute;
+        left:20%;
+    }
+}
+@media screen and (min-width: 600px){
+    .Center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+    .H1 {
+        font-size: 5em;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .H1 {
+        font-size: 4em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .H1 {
+        font-size: 2.5em;
+    }
+}
+@media (orientation: landscape) and (max-height: 600px){
+    .Container{
+        height: 175vh;
+    }
+}
+
+
+

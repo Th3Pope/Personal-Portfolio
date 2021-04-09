@@ -1,0 +1,245 @@
+.Container {
+    height: 100vh;
+    background-image: url("https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/pixel-art/desktop/pixelart_P1_900x420.jpg.img.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.Container2 {
+    height: 100vh;
+}
+
+.Box {
+    margin-left: 20vw;
+    position: relative;
+}
+
+.Image {
+    position: absolute;
+    height: 100vh;
+}
+
+.Bubble {
+    position: absolute;
+    height: 35vh;
+    padding-top: 2vh;
+}
+
+.TextBox {
+    position: absolute;
+    margin-top: 5vh;
+    padding-left: 4vw;
+    font-size: 5vh;
+    font-family: Game;
+    letter-spacing: 5px;
+}
+
+.SecondLine {
+    margin-top: -1vh;
+}
+
+.BubbleHello {
+    opacity: 0;
+}
+
+.BubbleWelcome {
+    opacity: 0;
+}
+
+@keyframes pullup {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes pulldown {
+    from {
+        transform: translateY(-2000px);
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .Bubble {
+        animation: pulldown 3s;
+    }
+
+    .Image {
+        animation: pullup 2s;
+    }
+}
+
+/*This one good */
+@media screen and (min-width: 800px) and (max-width: 999px) {
+    .Box {
+        margin-left: 10vw;
+    }
+
+    .TextBox {
+        padding-left: 1em;
+        font-size: 5vw;
+    }
+
+    .Bubble {
+        animation: pulldown 3s;
+    }
+
+    .Image {
+        animation: pullup 2s;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .Container {
+        height: 90vh;
+        overflow: hidden;
+    }
+
+    .Container2 {
+        height: 60vh;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .Box {
+        margin-left: 10vw;
+    }
+
+    .TextBox {
+        opacity: 0;
+    }
+
+    .Bubble {
+        opacity: 0;
+    }
+
+    .BubbleHello {
+        position: absolute;
+        top: 8vh;
+        left: 10vw;
+        width: 80%;
+        animation: pixelIn 10s infinite;
+    }
+
+    .BubbleWelcome {
+        position: absolute;
+        top: 8vh;
+        left: 10vw;
+        width: 80%;
+        animation: pixelIn2 10s infinite;
+    }
+
+    .Image {
+        position: absolute;
+        top: 0;
+        left: -25vw;
+        height: 60vh;
+        animation: pullup 2s;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    .Container2 {
+        height: 80vh;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .Box {
+        margin-left: 10vw;
+    }
+
+    .TextBox {
+        opacity: 0;
+    }
+
+    .Bubble {
+        opacity: 0;
+    }
+
+    .BubbleHello {
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
+        width: 60%;
+        animation: pixelIn 10s infinite;
+    }
+
+    .BubbleWelcome {
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
+        width: 60%;
+        animation: pixelIn2 10s infinite;
+    }
+
+    .Image {
+        position: absolute;
+        left: -20vw;
+        height: 80vh;
+        animation: pullup 2s;
+    }
+}
+
+@keyframes pixelIn {
+    0% {
+        -webkit-filter: blur(5px);
+    }
+    6% {
+        opacity: .5
+    }
+    8% {
+        -webkit-filter: blur(0px);
+    }
+    10% {
+        opacity: .75
+    }
+    12% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes pixelIn2 {
+    0% {
+        opacity: 0
+    }
+    54% {
+        opacity: 0
+    }
+    55% {
+        -webkit-filter: blur(5px);
+    }
+    61% {
+        opacity: .5
+    }
+    63% {
+        -webkit-filter: blur(0px);
+    }
+    65% {
+        opacity: .75
+    }
+    67% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

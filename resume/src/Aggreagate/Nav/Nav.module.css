@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Game;
+    src: url('../../Assets/Fonts/gameovercre1.ttf');
+}
+.Container {
+    font-family: Game;
+    background-color: #242d34;
+    height: auto !important;
+}
+.Dev {
+    font-size: 2em !important;
+    margin-left: 8vw;
+    color: #0788de !important;
+}
+.NavLnks {
+    margin-right: 8vw;
+}
+.Items {
+    color: #fad784;
+    font-size: 1.5em !important;
+}
+.Dev:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .Dev {
+        font-size: 1.5em !important;
+    }
+}

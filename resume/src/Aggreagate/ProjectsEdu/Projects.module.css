@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Game;
+    src:url('../../Assets/Fonts/gameovercre1.ttf');
+}
+.Container{
+    padding-top: 5vh;
+    font-family: Game;
+    letter-spacing: 5px;
+    padding-bottom: 2em;
+}
+.H1{
+    font-size: 2.5em;
+    padding-top: 1em;
+    letter-spacing: 5px;
+}
+.Box{
+    background-color: #fad784;
+    display: inline-block;
+    border-radius: 50px;
+    width: 60vw;
+}
+.List2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+    padding: 5vh 5vw;
+}
+.TextProjects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 2px;
+    width: 400px;
+    height:100%;
+    padding: 5vh 5vw;
+}
+.Border{
+    border-top: 2px dashed #0788de;
+    position: relative;
+}
+.Website{
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+.Website:hover{
+    cursor:pointer;
+}
+.ImageContainer{
+    position: relative;
+    height: 300px;
+}
+.ImageContainer2{
+    position: relative;
+    height: 300px;
+}
+.Image1{
+    padding: 1em;
+    height:100%;
+    background-color: #ffff;
+    border-radius: 50px;
+}
+.BorderPconnectTxt{
+    border-top: 1px dashed #d9d1cf;
+    padding-top: 15px;
+}
+.PconnectText{
+    width: 80%;
+    color: #0788de;
+    border-bottom: 1px dashed #d9d1cf;
+}
+.Image2{
+    padding: 1em;
+    height:100%;
+    background-color: #ffff;
+    border-radius: 50px;
+}
+.Image2:hover{
+    cursor: pointer;
+}
+.CalcText{
+    width: 80%;
+    color: #0788de;
+    border-bottom: 1px dashed #d9d1cf;
+}
+.Expire{
+    font-size: 1.75em;
+    padding-bottom: 30px;
+}
+.Expire:hover{
+    cursor: pointer;
+}
+.Overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 50px;
+    transition: opacity .25s;
+}
+.Overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 50px;
+    transition: opacity .25s;
+}
+.Overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.Overlay2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .Box{
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .Box {
+        width: 80vw;
+    }
+    .H1 {
+        font-size: 2.5em;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+    .ImageContainer2 {
+        margin-top: 2em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .Box{
+        width: 90vw;
+    }
+}
+@media only screen and (min-width: 1445px) {
+    .Image2{
+        margin-top: 5vh;
+    }
+    .Box{
+        padding-bottom: 5vh;
+    }
+    .Overlay2{
+        transform: translateY(5vh);
+    }
+}

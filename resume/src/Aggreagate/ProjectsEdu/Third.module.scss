@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Game;
+    src:url('../../Assets/Fonts/gameovercre1.ttf');
+}
+
+.Container {
+    height: 100%;
+    padding-bottom: 2em;
+    background-color: #028d81;
+    text-align: center;
+    font-family: Game;
+    color: #010103;
+}
+.H1{
+
+    letter-spacing: 5px;
+    position: relative;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-size: 6em;
+}
+.H2{
+    font-size: 2.5em;
+    padding-top: 1em;
+    letter-spacing: 2px;
+}
+.Box{
+    background-color: #fad784;
+    display: inline-block;
+    border-radius: 50px;
+    width: 60vw;
+}
+.EduTbl {
+    margin: 0;
+    padding: 0;
+    font-family: Game;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.LiElements{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 5vw;
+}
+.Border{
+    border-top: 1px dashed #d9d1cf;
+    position: relative;
+    padding-top: 10px;
+}
+.LogoContainer{
+    color: #0788de;
+    position: relative;
+    width: 320px;
+
+}
+.Logo{
+    display:block;
+    width: 100%;
+    border-radius: 50px;
+}
+.Overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 50px;
+    transition: opacity .25s;
+}
+.Overlay:hover{
+    opacity: 1;
+    cursor: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .Box{
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .H1{
+        font-size: 4em;
+    }
+    .Box{
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Box{
+        width: 90vw;
+    }
+    .H1{
+        font-size: 2.5em;
+    }
+    .EduTbl{
+        //letter-spacing: 0px;
+    }
+    .H2 {
+        font-size: 2em;
+    }
+}
+

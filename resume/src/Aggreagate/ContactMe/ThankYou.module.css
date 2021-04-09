@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Game;
+    src:url('../../Assets/Fonts/gameovercre1.ttf');
+}
+
+.Container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    background-color: #012825;
+    align-text: center;
+
+}
+.H1 {
+
+    text-align: center;
+    font-size: small;
+    padding-top: 1.5em;
+
+    color: grey;
+}
